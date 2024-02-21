@@ -1,0 +1,114 @@
+.container {
+    width: 500px;
+    height: 630px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-image: url("https://storage.needpix.com/rsynced_images/sky-705707_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 5px 8px rgb(56, 54, 54);
+}
+.top-bar{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 40px;
+}
+.top-bar input{
+    display: flex;
+    width: 300px;
+    height:50px ;
+    background: rgb(253, 253, 252);
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    padding-left: 40px;
+    color: rgb(15, 15, 15);
+    font-size: 20px;
+    font-weight: 400;
+    box-shadow: 0px 0px 3px 3px rgb(16, 15, 15);
+}
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(255, 253, 253);
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px rgb(46, 46, 46);
+}
+.weather-image{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.weather-temp{
+    display: flex;
+    justify-content: center;
+    color: rgb(29, 3, 3);
+    font-size: 30px;
+    font-weight: 200;
+}
+.weather-location{
+    display: flex;
+    justify-content: center;
+    color: rgb(16, 15, 15);
+    font-size: 30px;
+    font-weight: 400;
+}
+.data-container{
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.element{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+}
+.data{
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+.text{
+    color: black;
+    font-size:23px ;
+    font-weight: 400;
+}
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-bar {
+        padding: 10px 0;
+    }
+
+    .top-bar input {
+        font-size: 14px;
+    }
+    .data-container {
+        margin-top: 20px;
+    }
+    .text{
+        color: black;
+        font-size:18px ;
+        font-weight: 400;
+    }
+    .data{
+        color: black;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .element{
+        display: flex;
+        flex-direction: column;
+    }
+}
